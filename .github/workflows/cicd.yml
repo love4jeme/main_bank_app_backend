@@ -66,7 +66,7 @@ jobs:
           GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
           GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
       run: |
-         git clone https://$love4jeme:$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@github.com/love4jeme/kubernetes-manifest.git
+         git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/love4jeme/kubernetes-manifest.git
 
          
          cd kubernetes-manifest
